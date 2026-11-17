@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文经管顶刊写作范式"
+  short_description: "按论文部分提炼和应用中文经管顶刊写作结构"
+  default_prompt: "请按引言、数据、识别策略、实证结果、机制、异质性和结论分别分析这篇中文经管论文，并保持因果表述与证据边界。"

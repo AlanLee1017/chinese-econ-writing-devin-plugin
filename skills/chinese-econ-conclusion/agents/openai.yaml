@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文经管结论与政策含义"
+  short_description: "让结论和政策建议严格跟随证据"
+  default_prompt: "请根据正文结果重写结论、政策含义和研究局限，避免引入新结果或过度外推。"

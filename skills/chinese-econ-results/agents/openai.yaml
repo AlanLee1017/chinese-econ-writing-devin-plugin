@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文经管实证结果陈述"
+  short_description: "把回归表改写成自然的中文经济学结果段"
+  default_prompt: "请把下面的回归结果改写成中文经济学论文的结果段，避免逐个系数报告 p 值，突出方向、经济量级、表格定位和识别边界。"

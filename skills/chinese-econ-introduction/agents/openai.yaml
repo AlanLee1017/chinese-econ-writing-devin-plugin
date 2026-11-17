@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文经管论文引言"
+  short_description: "按第一段到结论段构建中文经管论文引言"
+  default_prompt: "请按引言各段功能诊断或改写这篇中文经管论文：问题、文献缺口、设计、发现、贡献和结构安排。"

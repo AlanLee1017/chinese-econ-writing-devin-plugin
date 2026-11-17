@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文经管识别策略与模型"
+  short_description: "把计量模型写成透明的识别论证"
+  default_prompt: "请检查这段识别策略是否明确估计对象、变异来源、关键假设、固定效应、聚类层级和识别威胁，并改写成中文论文表述。"

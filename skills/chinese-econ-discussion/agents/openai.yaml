@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文经管稳健性机制异质性"
+  short_description: "按威胁和机制组织扩展实证结果"
+  default_prompt: "请把稳健性、机制和异质性检验按研究目的重新组织，并控制因果表述强度。"

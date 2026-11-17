@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文经管文献综述与理论机制"
+  short_description: "按问题、机制和识别组织中文文献综述"
+  default_prompt: "请把这些中文经管文献按研究问题和机制综合，指出共识、分歧、边界条件和本文可检验的理论预测。"

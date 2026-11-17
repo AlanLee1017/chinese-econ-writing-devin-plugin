@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文经管制度背景与数据变量"
+  short_description: "写清制度、样本、变量和描述性统计"
+  default_prompt: "请按制度背景、数据来源、样本构造、变量定义和描述性统计重写这部分中文经管论文。"

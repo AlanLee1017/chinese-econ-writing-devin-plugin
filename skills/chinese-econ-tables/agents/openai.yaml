@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文经管表格与图形解读"
+  short_description: "让表格图形服务于中文论文论证"
+  default_prompt: "请检查这组表格、图形和正文描述是否一致，并改写成自然的中文经管论文表述。"

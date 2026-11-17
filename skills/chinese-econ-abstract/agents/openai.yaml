@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文经管论文摘要"
+  short_description: "压缩研究问题、设计和发现"
+  default_prompt: "请把这篇中文经管论文压缩为问题、方法、主要发现、机制和研究含义清晰的摘要。"

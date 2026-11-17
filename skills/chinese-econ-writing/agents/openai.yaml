@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文经管论文写作总入口"
+  short_description: "路由引言、实证结果和顶刊风格写作技能"
+  default_prompt: "请先判断任务属于引言、实证结果还是全文风格问题，再调用对应的中文经管写作范式。"
