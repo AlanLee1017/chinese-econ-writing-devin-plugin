@@ -24,4 +24,6 @@ metadata:
 
 不要在结论中引入正文没有报告的新结果；不要把相关性写成因果性；不要把单一试点外推到所有地区；局限应描述证据边界，而不是写成对作者的编辑说明。
 
+结论不得新增数字、样本、文献、机制或政策事实；所有句子都应能在正文表格、图形或识别讨论中找到依据。
+
 详细模板见 [references/conclusion-patterns.md](references/conclusion-patterns.md)。

@@ -13,9 +13,10 @@ from pathlib import Path
 
 
 PATTERNS = {
-    "p-value": re.compile(r"[（(]\s*p\s*=|\bp\s*值\s*[=:：]", re.I),
-    "t-value": re.compile(r"[（(]\s*t\s*=|\bt\s*值\s*[=:：]", re.I),
-    "z-value": re.compile(r"[（(]\s*z\s*=|\bz\s*值\s*[=:：]", re.I),
+    "p-value": re.compile(r"\bp\s*=|\bp\s*值\s*[=:：]|[（(]\s*p\s*值", re.I),
+    "t-value": re.compile(r"\bt\s*=|\bt\s*值\s*[=:：]|[（(]\s*t\s*值", re.I),
+    "z-value": re.compile(r"\bz\s*=|\bz\s*值\s*[=:：]|[（(]\s*z\s*值", re.I),
+    "standard-error": re.compile(r"标准误|标准误差|\bse\s*=|\bstd\.??\s*err", re.I),
 }
 
 

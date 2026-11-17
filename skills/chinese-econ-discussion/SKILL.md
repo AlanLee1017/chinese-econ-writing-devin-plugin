@@ -19,4 +19,6 @@ metadata:
 
 先写检验目的，再写方法和结果，最后写证据边界。使用“支持……解释”“与……一致”“提示……”而非自动写成“验证了机制”。
 
+分组差异、交互项和中介回归只能提供支持性证据；除非设计直接识别机制，否则不要写成“机制得到证明”。
+
 详细写法见 [references/discussion-patterns.md](references/discussion-patterns.md)。
