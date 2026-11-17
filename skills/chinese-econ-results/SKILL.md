@@ -1,6 +1,6 @@
 ---
 name: chinese-econ-results
-description: Write, revise, or audit Chinese empirical economics and management results sections so they read like journal prose rather than statistical output. Use for baseline results, robustness, mechanisms, heterogeneity, table discussion, coefficient interpretation, and Chinese reporting conventions.
+description: Write, revise, or audit Chinese empirical economics and management results sections as journal prose. Strictly remove single-coefficient p/t/z-value parentheses, report significance in Chinese prose, preserve only explicitly labelled joint-test statistics, and verify the full output before delivery.
 metadata:
   short-description: 中文经管实证结果陈述
 ---
@@ -11,7 +11,9 @@ metadata:
 
 ## 核心写作规则
 
-- 默认不在正文中逐个系数后添加“（p=…）”或“（t=…）”。除非用户指定期刊格式或需要特别报告，正文用“在1%的统计水平上显著”“统计上不显著”“置信区间不包含0”等自然表述；精确 p 值保留在表格、附录或脚注。
+- **硬性格式规则：正文结果段禁止出现系数后的精确 p 值、t 值或 z 值括号**，包括 `（p=0.025）`、`(p = 0.025)`、`（t=2.31）`、`（z=1.96）` 和 `coef (p-value)`。把它们改写为“在5%的统计水平上显著”“统计上不显著”“置信区间不包含0”等自然表述；精确数值保留在回归表、表注、附录或脚注。
+- 只有当 p 值本身是联合 Wald/F 检验、事件研究整体检验或安慰剂检验的研究对象时，才可以保留精确 p 值，并且必须明确写成“联合检验的 p 值为……”，不能把它放在单个系数后面。
+- **交付前必须扫描全文**：搜索 `p=`、`p =`、`p值`、`t=`、`t =`、`z=`、`z =` 及其中文括号形式；发现单个系数后的统计量就重写，直到扫描结果为零。不要只检查首段。
 - 不把 Stata/R 输出逐行翻译成正文。正文只讨论与研究问题有关的核心系数、经济量级、比较关系和识别含义。
 - 不只写“显著为正”。优先说明方向、量级、统计不确定性、经济意义和表格位置。
 - “影响”“导致”“表明机制成立”“证明”必须由识别设计支持；否则使用“相关”“对应”“支持……解释”“与……一致”“提示”。
@@ -73,5 +75,15 @@ metadata:
 - 没有添加输入中不存在的数字、显著性、样本或政策事实；
 - 使用了与识别设计相称的动词；
 - 保留了用户的变量名称、表号、参考文献和作者语气。
+- 正文没有出现单个系数后的 `（p=…）`、`（t=…）` 或 `（z=…）`；若保留 p 值，已明确说明它是联合检验或其他整体检验的统计结果。
+- 已对完整输出做过 `p=`、`t=`、`z=` 模式扫描，而不是只凭肉眼检查局部。
+
+## 交付前强制自检
+
+1. 先完成改写。
+2. 对完整结果段执行 [scripts/check_result_style.py](scripts/check_result_style.py)，或按同样规则搜索禁用模式。
+3. 对每个命中位置判断：是单个系数后的精确统计量，还是明确的联合/整体检验。
+4. 删除或改写前一种；保留后一种时补充检验对象和研究含义。
+5. 再输出正文和简短修改说明。不得把“我检查过了”当作检查结果，必须实际完成扫描。
 
 详细句式和前后对照见 [references/result-patterns.md](references/result-patterns.md)。
